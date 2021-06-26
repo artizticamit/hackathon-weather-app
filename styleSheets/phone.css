@@ -1,0 +1,12 @@
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+input[type="text"]{
+    max-width: 90%;
+    margin-bottom: 10px;
+}
