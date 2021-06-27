@@ -61,7 +61,7 @@ body::before{
     text-decoration: none;
 }
 
-.nav-left{
+/* .nav-left{
     position: absolute;
     right: 10px;
 }
@@ -75,9 +75,9 @@ body::before{
     list-style: none;
     padding: 20px;
     /* margin-left: 30px; */
-}
 
-#header .nav-left ul li a{
+
+/* #header .nav-left ul li a{
     text-decoration: none;
     padding: 6px 15px;
     color: #094b65;
@@ -87,8 +87,8 @@ body::before{
 #header .nav-left ul li .active
 {
     background-color: #094b65;
-    color: #fff;
-}
+    color: #fff; */
+
 
 /* .nav-left ul{
     position: relative;
@@ -211,4 +211,32 @@ footer{
     text-align: center;
     padding-top: 5px;
     font-family: 'Rancho', sans-serif;
+}
+
+@media only screen and (max-width: 714px)
+{
+    #header{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 570px)
+{
+    section #text{
+        font-size: 30vw;
+    }
+}
+
+@media only screen and (max-width: 520px)
+{
+    .display{
+        margin: 5px auto;
+        padding: 5px 5px;
+        position: relative;
+        top: 30px;
+        width: 70%;
+    }
+    .display .item{
+        padding: 5px 5px;
+    }
+    
 }
