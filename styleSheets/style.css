@@ -1,53 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
 body{
-    overflow-x: hidden;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    background-color: black;
-    min-height: 100vh;
+    /* background-color: wheat; */
+    /* opacity: 0.7; */
+}
+body::before{
+    content: "";
+    background: url('../images/glass-window-1845534_1920.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    height: 1300px;
+    width: 100%;
+    opacity: 0.7;
+
 }
 
-/* navigation bar  */
 
-/* #header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 30px 100px;
-} */
-
-
-.navbar{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
+#header{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    
+    min-height: 90px;
+}
 
+#header::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    background: url('../images/frozen-201495_1920.jpg') no-repeat center center/cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+.logo-container{
+    margin: 15px 40px;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-image{
+    height: 25px;
+    padding-right: 10px;
+}
+
+#header .logo-container #logo{
+    color: #094b65;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.nav-left{
+    position: absolute;
+    right: 10px;
+}
+#header .nav-left ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .nav-left ul li{
+    list-style: none;
+    padding: 20px;
+    /* margin-left: 30px; */
+}
+
+#header .nav-left ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #094b65;
+    border-radius: 20px;
+}
+#header .nav-left ul li a:hover,
+#header .nav-left ul li .active
+{
+    background-color: #094b65;
+    color: #fff;
 }
 
 /* .nav-left ul{
-    display: flex;
-    margin-left: 30px;
+    position: relative;
+    right: 20px;
 } */
 
 
+  
+
+/* front page section  */
+section{
+    position: relative;
+    width: 100%;
+    min-height: 405px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+    top: 1px;
+    /* background-color: green; */
+    /* background: url('../images/raindrop-1445835_1920.jpg') no-repeat center center/cover; */
+}
 
 
 
+section #text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #094b65;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.7em;
+    font-family: 'Rancho', cursive;
+}
+
+.frontpage #text span{
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
 
 
+
+/* utility section   */
+
+.input{
+    position: relative;
+}
 
 .input{
     text-align: center;
-    margin-top: 60px;
+    margin-top: 3px;
+    position: relative;
+    top: 20px;
 }
 
 input[type="text"]{
@@ -82,18 +182,36 @@ input[type="submit"]:hover{
     flex-direction: column;
     padding: 34px 138px;
     text-align: center;
-    background-color: grey;
+    background-color: #39A2DB;
     justify-content: center;
     align-items: center;
     position: relative;
     height: 24rem;
-    width: 50%;
+    width: 40%;
     margin-top: 10px;
     margin:30px auto;
     border-radius: 20px;
-    
+    opacity: 0.89;
 }
 .item{
     padding:20px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    content: "";
+    /* background: url('../images/glass-window-1845534_1920.jpg') no-repeat center center/cover; */
+    min-height: 800px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+footer{
+    background: black;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Rancho', sans-serif;
 }

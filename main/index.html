@@ -6,40 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
     <link rel="icon" href="../images/weather-app.png">
-    <!-- <link rel="stylesheet" media="Screen and (max-width: 714px" href="phone.css"> -->
+    <link rel="stylesheet" media="Screen and (max-width: 714px" href="phone.css">
     <link rel="stylesheet" href="../styleSheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header id="header" class="navbar">
-            <div class="logo" id="logo">
+            <div class="logo-container">
                 <!-- <img src="../images/WhatsApp Video 2021-06-26 at 2.15.50 PM.jpg" alt="" srcset=""> -->
-                Logo
+                <a href="#"><img src="../images/moon.png" id="logo-image"></a>
+                <a href="#" id="logo">AccuWeather</a>
             </div>
             <div class="nav-left">
                 <ul>
-                    <li class="items"><a href="#">Home</a></li>
+                    <li class="items"><a href="#" class="active">Home</a></li>
                     <li class="items"><a href="#">About</a></li>
                     <li class="items"><a href="#">FAQs</a></li>
                     <li class="items"><a href="#">Contact</a></li>
                 </ul>
             </div>
     </header>
-    
-    <div class="input">
-        <input type="text" name=""  class="inputValue" id="" placeholder="Enter a city">
-        <input type="submit" value="Submit" class="button">
-    </div>
 
-    <div class="display">
-        <h1 class="name item">City Name</h1>
-        <p class="desc item">Description</p>
-        <p class="temp item">Temperature(in Degree)</p>
-        <p class="icon item">
-            <img src="" id="weather-icon">
-        </p>
-    </div>
+    <section class="frontpage">
+        <h2 id="text"><span>Accurate Weather</span>Let's see</h2>
+    </section>
 
+    <div class="container">
+
+        
+        <div class="input">
+            <input type="text" name=""  class="inputValue" id="" placeholder="Enter the city name">
+            <input type="submit" value="Submit" class="button">
+        </div>
+        
+        <div class="display">
+            <h1 class="name item">City Name</h1>
+            <p class="desc item">Description</p>
+            <p class="temp item">Temperature(in Degree)</p>
+            <p class="icon item">
+                <img src="" id="weather-icon">
+            </p>
+            <!-- <p class="time item">Time</p> -->
+        </div>
+        
+    </div>
+    <footer>
+        Copyright &copy; All Rights Reserved.
+    </footer>
 
     <script src="../JavaScript/app.js"></script>
 </body>

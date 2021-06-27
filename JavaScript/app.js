@@ -14,13 +14,19 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&ap
   .then(response=> response.json())
   .then(data => {
       console.log(data);
+      let date = data['dt'];
+      let parsedDate = new Date(date*1000);
+      console.log(parsedDate.toUTCString());
+      let countryName = data['sys']['country'];
       let nameValue = data['name'];
       let tempValue = data['main']['temp']-273;
       let descValue = data['weather'][0]['description'];
       let icon = data['weather'][0]['icon'];
-      name.innerHTML  = nameValue;
+      name.innerHTML  = nameValue+" ,"+countryName;
       temp.innerHTML = Math.round(tempValue*100)/100 + " Degree";
       desc.innerHTML = descValue;
+      // time.innerHTML = date;
+      // time.innerHTML = new Date().toLocaleString("en-US", {timeZone: "Asia/colombo"});
       image.src = "http://openweathermap.org/img/wn/"+icon+"@2x.png";
       
   })
