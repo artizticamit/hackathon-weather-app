@@ -14,9 +14,9 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&ap
   .then(response=> response.json())
   .then(data => {
       console.log(data);
-      let date = data['dt'];
-      let parsedDate = new Date(date*1000);
-      console.log(parsedDate.toUTCString());
+      // let date = data['dt'];
+      // let parsedDate = new Date(date*1000);
+      // console.log(parsedDate.toUTCString());
       let countryName = data['sys']['country'];
       let nameValue = data['name'];
       let tempValue = data['main']['temp']-273;
