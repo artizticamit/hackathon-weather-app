@@ -9,7 +9,7 @@ body{
 }
 body::before{
     content: "";
-    background: url('../images/glass-window-1845534_1920.jpg') no-repeat center center/cover;
+    background: url('images/glass-window-1845534_1920.jpg') no-repeat center center/cover;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -36,7 +36,7 @@ body::before{
     top: 0px;
     left: 0px;
     background-color: black;
-    background: url('../images/frozen-201495_1920.jpg') no-repeat center center/cover;
+    background: url('images/frozen-201495_1920.jpg') no-repeat center center/cover;
     z-index: -1;
     height: 100%;
     width: 100%;
